@@ -1,0 +1,123 @@
+body {
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-img-container {
+    display: inline-block;
+    width: 100%;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff; /* Белый цвет текста */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.game-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.game-logo {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.game-title {
+    flex: 1;
+}
+
+.game-title h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff; /* Белый цвет заголовка */
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Белый цвет фона кнопки */
+    color: #000; /* Черный цвет текста кнопки */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.game-description {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.game-description h3 {
+    color: #fff; /* Белый цвет заголовка */
+}
+
+.game-description p {
+    margin: 10px 0;
+    color: #fff; /* Белый цвет текста */
+}
+
+.screenshots {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.screenshots h2 {
+    color: #fff; /* Белый цвет заголовка */
+    margin-bottom: 10px;
+}
+
+.screenshot {
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* Белый цвет текста */
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
