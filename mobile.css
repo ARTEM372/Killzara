@@ -187,10 +187,10 @@ footer {
     }
 
     nav ul {
-        flex-direction: row; /* Расположим элементы в ряд */
+        flex-direction: row; /* Располагаем элементы в ряд */
     }
 
     nav ul li {
-        margin: 5px 10px;
+        margin: 0 10px;
     }
 }
