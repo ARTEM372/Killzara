@@ -1,6 +1,6 @@
 body {
-    background-color: #000; /* Черный фон */
-    color: #fff; /* Белый текст */
+    background-color: #000;
+    color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* Белый цвет текста */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -61,14 +61,14 @@ main {
 .game-title h1 {
     margin: 0;
     font-size: 2em;
-    color: #fff; /* Белый цвет заголовка */
+    color: #fff;
 }
 
 .btn-download {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #fff; /* Белый цвет фона кнопки */
-    color: #000; /* Черный цвет текста кнопки */
+    background-color: #fff;
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
@@ -83,12 +83,12 @@ main {
 }
 
 .game-description h3 {
-    color: #fff; /* Белый цвет заголовка */
+    color: #fff;
 }
 
 .game-description p {
     margin: 10px 0;
-    color: #fff; /* Белый цвет текста */
+    color: #fff;
 }
 
 .screenshots {
@@ -99,7 +99,7 @@ main {
 }
 
 .screenshots h2 {
-    color: #fff; /* Белый цвет заголовка */
+    color: #fff;
     margin-bottom: 10px;
 }
 
@@ -114,7 +114,7 @@ footer {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     text-align: center;
-    color: #fff; /* Белый цвет текста */
+    color: #fff;
     margin-top: 20px;
 }
 
