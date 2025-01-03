@@ -151,3 +151,45 @@ footer {
     bottom: 0;
     left: 0;
 }
+
+/* Медиазапросы для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+    .game-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-logo {
+        margin-bottom: 10px;
+    }
+
+    .game-title h1 {
+        font-size: 1.5em;
+    }
+
+    .btn-download {
+        font-size: 1em;
+    }
+
+    .game-description {
+        padding: 15px;
+    }
+
+    .screenshots {
+        padding: 15px;
+    }
+
+    .screenshot {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}

@@ -1,94 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Neighbor DevGAMM, but PLAYABLE</title>
-    <link rel="stylesheet" href="gamepage.css"> <!-- Подключение нового CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> <!-- Подключение Lightbox CSS -->
-    <style>
-        nav ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
+html, body {
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Использование Segoe UI */
+    margin: 0;
+    padding: 10px 0; /* Уменьшаем отступы сверху и снизу */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* Отключение горизонтальной прокрутки */
+}
 
-        nav ul li {
-            margin: 0;
-        }
+nav {
+    width: 100%;
+    margin-bottom: 10px; /* Добавляем отступ снизу */
+    padding-top: 0px; /* Убираем отступ сверху */
+}
 
-        nav ul li a {
-            background-color: white;
-            border-radius: 10px;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: black;
-            display: block;
-        }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px; /* Убираем отступ сверху для навигации */
+}
 
-        nav ul li:first-child a {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
 
-        nav ul li:last-child a {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
+nav ul li a {
+    color: #fff; /* Белый цвет текста */
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        nav ul li:not(:first-child):not(:last-child) a {
-            border-radius: 0;
-        }
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    margin-top: 0px; /* Убираем отступ сверху */
+}
 
-        nav ul li a:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="videos.html">Videos</a></li>
-            </ul>
-        </nav>
-        <div class="header-img-container">
-            <img src="https://m.gjcdn.net/game-header/3400/945677-crop0_137_2400_737-rgiwjhvy-v4.webp" alt="HN DevGAMM Header" class="header-img">
-        </div>
-    </header>
-    <main>
-        <div class="game-header">
-            <img src="https://github.com/killzara/Killzara/blob/main/mqdefault.png?raw=true" alt="HN DevGAMM Logo" class="game-logo">
-            <div class="game-title">
-                <h1>Hello Neighbor DevGAMM, but PLAYABLE</h1>
-                <a href="https://gamejolt.com/get/build?game=945677&build=1681803" class="btn-download">Download for Windows</a> 
-                <a href="https://gamejolt.com/get/build?game=945677&build=1681802" class="btn-download">Download for Android</a>
-            </div>
-        </div>
-        <section class="game-description">
-            <h3>Description</h3>
-            <p>"Hello Neighbor DevGAMM" is an early version of the famous game "Hello Neighbor", released in 2014 at the DevGAMM conference. The game is a stealth horror movie, where the main task is to break into a neighbor's house and reveal his secrets, while avoiding detection. The neighbor's artificial intelligence learns from the player's actions and complicates the gameplay with each new approach, making the game exciting and unpredictable.
+.header-img-container {
+    width: 100%;
+    margin-top: 10px; /* Уменьшаем отступ для шапки ниже кнопок навигации */
+}
 
-            I was inspired by this concept and created my own game. In my project, players also infiltrate a neighbor's house using stealth and avoiding traps. I tried to keep the spirit of the original by adding my own unique elements to make the game even more interesting and exciting.</p>
-        </section>
-        <section class="screenshots" id="screenshots">
-            <h2>Screenshots</h2>
-            <a href="https://m.gjcdn.net/game-screenshot/600/37719469-skex2ms5-v4.webp" data-lightbox="hn-devgamm-gallery" data-title="Screenshot 1"><img src="https://m.gjcdn.net/game-screenshot/600/37719469-skex2ms5-v4.webp" alt="Screenshot 1" class="screenshot"></a>
-            <a href="https://m.gjcdn.net/game-screenshot/600/37719462-iyaqhswb-v4.webp" data-lightbox="hn-devgamm-gallery" data-title="Screenshot 2"><img src="https://m.gjcdn.net/game-screenshot/600/37719462-iyaqhswb-v4.webp" alt="Screenshot 2" class="screenshot"></a>
-            <a href="https://m.gjcdn.net/game-screenshot/600/37719447-ezpcubcu-v4.webp" data-lightbox="hn-devgamm-gallery" data-title="Screenshot 3"><img src="https://m.gjcdn.net/game-screenshot/600/37719447-ezpcubcu-v4.webp" alt="Screenshot 3" class="screenshot"></a>
-            <a href="https://m.gjcdn.net/game-screenshot/600/37719430-ryhrwhtm-v4.webp" data-lightbox="hn-devgamm-gallery" data-title="Screenshot 4"><img src="https://m.gjcdn.net/game-screenshot/600/37719430-ryhrwhtm-v4.webp" alt="Screenshot 4" class="screenshot"></a>
-            <a href="https://m.gjcdn.net/game-screenshot/600/37719419-m49ddepy-v4.webp" data-lightbox="hn-devgamm-gallery" data-title="Screenshot 5"><img src="https://m.gjcdn.net/game-screenshot/600/37719419-m49ddepy-v4.webp" alt="Screenshot 5" class="screenshot"></a>
-            <a href="https://m.gjcdn.net/game-screenshot/600/37719392-d2r5u2nk-v4.webp" data-lightbox="hn-devgamm-gallery" data-title="Screenshot 6"><img src="https://m.gjcdn.net/game-screenshot/600/37719392-d2r5u2nk-v4.webp" alt="Screenshot 6" class="screenshot"></a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Killzara. All rights reserved.</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script> <!-- Подключение Lightbox JS -->
-    <script src="D:/KillzaraWebSite/js/scripts.js"></script> <!-- Подключение вашего собственного скрипта -->
-</body>
-</html>
+.header-img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.game-header {
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
+}
+
+.game-logo {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 10px; /* Скругление углов */
+    overflow: hidden; /* Убедитесь, что содержимое логотипа не выходит за границы */
+}
+
+.game-title {
+    flex: 1;
+}
+
+.game-title h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff; /* Белый цвет заголовка */
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Белый цвет фона кнопки */
+    color: #000; /* Черный цвет текста кнопки */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.game-description {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
+    text-align: left; /* Выравнивание текста по левому краю */
+    width: 100%; /* Растягиваем на всю ширину */
+}
+
+.game-description h3 {
+    color: #fff; /* Белый цвет заголовка */
+}
+
+.game-description p {
+    margin: 10px 0;
+    color: #fff; /* Белый цвет текста */
+}
+
+.screenshots {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
+    width: 100%; /* Растягиваем на всю ширину */
+}
+
+.screenshots h2 {
+    color: #fff; /* Белый цвет заголовка */
+    margin-bottom: 10px;
+}
+
+.screenshot {
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* Белый цвет текста */
+    margin-top: 20px;
+    width: 100%;
+    position: fixed; /* Зафиксировать внизу экрана */
+    bottom: 0;
+    left: 0;
+}
+
+/* Медиазапросы для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+    .game-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-logo {
+        margin-bottom: 10px;
+    }
+
+    .game-title h1 {
+        font-size: 1.5em;
+    }
+
+    .btn-download {
+        font-size: 1em;
+    }
+
+    .game-description {
+        padding: 15px;
+    }
+
+    .screenshots {
+        padding: 15px;
+    }
+
+    .screenshot {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
