@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slender: The Eight Pages Mobile</title>
-    <link rel="stylesheet" href="gamepage.css"> <!-- Подключение нового CSS -->
+    <link rel="stylesheet" href="desktop.css" id="mainStylesheet"> <!-- Подключение десктопного CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> <!-- Подключение Lightbox CSS -->
     <style>
         nav ul {
@@ -12,11 +12,12 @@
             margin: 0;
             list-style: none;
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* Вертикальное расположение для мобильных устройств */
+            align-items: center; /* Центрируем элементы */
         }
 
         nav ul li {
-            margin: 0;
+            margin: 5px 0; /* Отступы для элементов списка */
         }
 
         nav ul li a {
@@ -46,6 +47,41 @@
             background-color: #f0f0f0;
         }
     </style>
+    <script>
+        // Определяем операционную систему устройства
+        function detectOS() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/windows phone/i.test(userAgent)) {
+                return "Windows Phone";
+            }
+
+            if (/android/i.test(userAgent)) {
+                return "Android";
+            }
+
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "iOS";
+            }
+
+            if (/Win|Linux/.test(userAgent)) {
+                return "Desktop";
+            }
+
+            return "unknown";
+        }
+
+        // Применение соответствующей стилизации
+        document.addEventListener("DOMContentLoaded", function() {
+            var os = detectOS();
+            var mainStylesheet = document.getElementById('mainStylesheet');
+            if (os === "Android" || os === "iOS") {
+                mainStylesheet.setAttribute('href', 'mobile.css'); // URL мобильной версии CSS
+            } else if (os === "Desktop") {
+                mainStylesheet.setAttribute('href', 'desktop.css'); // URL десктопной версии CSS
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
