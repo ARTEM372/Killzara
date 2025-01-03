@@ -1,6 +1,6 @@
 body {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #000;
+    color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    overflow: hidden; /* Disable scrolling */
+    overflow: hidden;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White text */
+    color: #fff; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -55,10 +55,10 @@ nav ul li a {
 footer {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
-    color: rgba(255, 255, 255, 0.7); /* Update text color */
+    color: rgba(255, 255, 255, 0.7);
     width: 100%;
     text-align: center;
-    font-size: 12px; /* Update font size */
+    font-size: 12px;
     position: absolute;
     bottom: 0;
 }
