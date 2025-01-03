@@ -187,12 +187,10 @@ footer {
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center; /* Центрируем элементы в мобильной версии */
+        flex-direction: row; /* Расположим элементы в ряд */
     }
 
     nav ul li {
-        margin: 5px 0;
-        display: block;
+        margin: 5px 10px;
     }
 }
