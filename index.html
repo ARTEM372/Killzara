@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Killzara</title>
     <link rel="stylesheet" href="killzara_styles.css">
+    <style>
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+
+        nav ul li:first-child a {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        nav ul li:last-child a {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        nav ul li a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,6 +48,7 @@
         <nav>
             <ul>
                 <li><a href="games.html">Games</a></li>
+                <li><a href="videos.html">Your Videos</a></li>
             </ul>
         </nav>
     </header>

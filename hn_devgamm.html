@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Neighbor DevGAMM, but PLAYABLE</title>
-    <link rel="stylesheet" href="gamepage.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="gamepage.css"> <!-- Подключение нового CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> <!-- Подключение Lightbox CSS -->
+    <style>
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+
+        nav ul li:first-child a {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        nav ul li:last-child a {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        nav ul li:not(:first-child):not(:last-child) a {
+            border-radius: 0;
+        }
+
+        nav ul li a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,6 +53,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="games.html">Games</a></li>
+                <li><a href="videos.html">Videos</a></li>
             </ul>
         </nav>
         <div class="header-img-container">
@@ -47,7 +88,7 @@
     <footer>
         <p>&copy; 2025 Killzara. All rights reserved.</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
-    <script src="D:/KillzaraWebSite/js/scripts.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script> <!-- Подключение Lightbox JS -->
+    <script src="D:/KillzaraWebSite/js/scripts.js"></script> <!-- Подключение вашего собственного скрипта -->
 </body>
 </html>
